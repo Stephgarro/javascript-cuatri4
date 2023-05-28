@@ -1,5 +1,6 @@
-import  random from "./modules/random.js";
-import specific from "./modules/specific.js";
+import  getRandomJoke from "./modules/random.js";
+import getSpecificJokes  from "./modules/specific.js";
+
 
 /// acceder al html 
 const aleatoriBtn = document.getElementById('aleatoriBtn');
