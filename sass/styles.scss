@@ -1,1 +1,24 @@
 @import'components/jokes';
+@import'components/display';
+@import'components/product';
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif, Times, serif;
+  }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+}

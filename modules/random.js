@@ -1,18 +1,19 @@
 
-  import apiUrl from './config.js';
+
+import { apiUrl, headers } from './config.js';
 
 function getRandomJoke() {
-  // Realizar una petición GET al API
   fetch(apiUrl, {
-    headers: {
-      Accept: 'application/json',
-    },
+    headers: headers,
   })
     .then((response) => response.json())
     .then((data) => {
       const randomJokeElement = document.getElementById('randomJoke');
-      // Se actualiza el contenido con un chiste random
       randomJokeElement.textContent = data.joke;
+
+      // Asignar el chiste a los elementos jokeVisualization y jokeVisual
+      document.getElementById('jokeVisualization').innerText = data.joke;
+      document.getElementById('jokeVisual').innerText = data.joke;
     })
     .catch((error) => {
       console.error(error);
