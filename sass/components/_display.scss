@@ -1,0 +1,42 @@
+.display-container {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    gap: 40px;
+}
+
+.container--display {
+    width: 100%;
+}
+
+
+
+.display__picture {
+    max-width: 570px;
+    max-height: 373px;
+}
+
+.display__description{
+    position: absolute;
+    top: 142px;
+    left: 688px;
+    width: 225px;
+    color: white;
+    font-size: 17px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.btn__color {
+    width: 70px;
+    height: 35px;
+}
+

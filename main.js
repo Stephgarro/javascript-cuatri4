@@ -1,18 +1,17 @@
 import  getRandomJoke from "./modules/random.js";
 import getSpecificJokes  from "./modules/specific.js";
+import addImagesToContainers from "./modules/products.js";
 
 
-/// acceder al html 
+
 const aleatoriBtn = document.getElementById('aleatoriBtn');
 const specificBtn = document.getElementById('specificBtn');
 
+addImagesToContainers();
 
-
-// Agregar eventos a los botones
 aleatoriBtn.addEventListener('click',  getRandomJoke);
 
 specificBtn.addEventListener('click', getSpecificJokes);
-
 
 
 

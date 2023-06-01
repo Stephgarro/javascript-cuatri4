@@ -1,0 +1,23 @@
+.product-container {
+    display: flex;
+    max-width: 60%;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 40px;
+ 
+}
+.tittle {
+    text-align: center;
+} 
+
+
+.picture-container {
+    min-width: 300px;
+    min-height: 268px;
+    border: 4px solid black;
+}
+
+.picture__size {
+    min-width: 300px;
+    max-height: 345px;
+}

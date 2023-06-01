@@ -1,3 +1,7 @@
-const apiUrl = 'https://icanhazdadjoke.com/';
 
-export default apiUrl;
+const apiUrl = 'https://icanhazdadjoke.com/';
+const headers = {
+  Accept: 'application/json',
+};
+
+export { apiUrl, headers };
