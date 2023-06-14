@@ -53,3 +53,21 @@ export function updateProductDisplay(productImage, productTitle, productPrice) {
       });
     }
   };
+
+  export function handleImageClick(event) {
+    const clickedImage = event.target;
+    const productId = clickedImage.getAttribute("data-product-id");
+  
+    // Llama a las funciones correspondientes en los componentes para actualizar los elementos
+    productComponent.productChanged(productId);
+    titleComponent.productChanged(productId);
+    priceComponent.productChanged(productId);
+    visualizationComponent.productChanged(productId);
+  }
+
+  const images = document.querySelectorAll(".picture__size");
+images.forEach(image => {
+  image.addEventListener("click", handleImageClick);
+});
+
+

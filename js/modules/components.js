@@ -22,6 +22,7 @@ export const productComponent = {
   },
 
   jokeChanged() {
+    // Lógica para obtener un nuevo chiste
     const jokes = ["Joke 1", "Joke 2", "Joke 3"];
     const randomIndex = Math.floor(Math.random() * jokes.length);
     const newJoke = jokes[randomIndex];
@@ -46,6 +47,7 @@ export const titleComponent = {
   },
 
   jokeChanged() {
+    // No se necesita realizar ninguna acción en este componente para los cambios de chiste
   }
 };
 
@@ -63,7 +65,7 @@ export const priceComponent = {
   },
 
   jokeChanged() {
-
+    // No se necesita realizar ninguna acción en este componente para los cambios de chiste
   }
 };
 
@@ -82,13 +84,13 @@ export const visualizationComponent = {
   },
 
   jokeChanged() {
-   
+    // No se necesita realizar ninguna acción en este componente para los cambios de chiste
   }
 };
 
 export const jokeComponent = {
   productChanged(productId) {
-
+    // No se necesita realizar ninguna acción en este componente para los cambios de producto
   },
 
   jokeChanged() {
@@ -100,3 +102,8 @@ function updateJokeColor(color) {
   const jokeVisualization = document.querySelector("#jokeVisualization");
   jokeVisualization.style.color = color;
 }
+
+
+
+
+
